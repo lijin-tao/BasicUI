@@ -18,7 +18,7 @@ defineOptions({
   name: "LoginComponent",
 });
 const props =withDefaults(defineProps<TestProps>(),{
-  name:'test-name',
+  name:'李四',
   age:18
 });
 const data=ref<TestProps>({...props});
@@ -41,8 +41,40 @@ defineExpose({
 
       <div><input type="text" class="input" v-model="data.title"></div>
       
-      <button type="button" class="btn-test">保存</button>
+      <button type="button" class="btn btn-test">保存</button>
       <button type="button" class="btn">测试</button>
+
+
+      <table>
+        <thead>
+          <tr>
+            <th>名称</th>
+            <th>年龄</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{data.name}}</td>
+            <td>{{data.age}}</td>
+          </tr>
+          <tr>
+            <td>{{data.name}}</td>
+            <td>{{data.age}}</td>
+          </tr>
+          <tr>
+            <td>{{data.name}}</td>
+            <td>{{data.age}}</td>
+          </tr>
+          <tr>
+            <td>{{data.name}}</td>
+            <td>{{data.age}}</td>
+          </tr>
+          <tr>
+            <td>{{data.name}}</td>
+            <td>{{data.age}}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
 </template>
@@ -50,6 +82,7 @@ defineExpose({
 <style scoped lang="less">
 @import '../assets/CSS/BasicStyle.less';
 @test-color:#48bb5d;
+
 .btn-color(test;@test-color);
 .input-color(test;@test-color);
 
