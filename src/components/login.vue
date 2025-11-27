@@ -38,8 +38,7 @@ defineExpose({
 </script>
 <template>
     <div>Login Component
-      
-      <input type="text">
+
       <div><input type="text" class="input" v-model="data.title"></div>
       
       <button type="button" class="btn-test">保存</button>
